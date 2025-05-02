@@ -1,0 +1,61 @@
+sara_data = {'name': 'Sara', 'class': 8, 'school': 'The Educators', 'fav_color': 'blue', 'points': 5, 'gender': 'girl', 'fav_food': 'pasta'}
+print(sara_data['name'])
+print(sara_data['class'])
+print(sara_data['school'])
+print(sara_data['fav_color'])
+print(sara_data['points'])
+print(sara_data['gender'])
+print(sara_data['fav_food'])
+
+# add function
+sara_data['nature'] = 'jolly'
+print(sara_data['nature'])
+
+# modifying function
+sara_data= {'color': 'blue'}
+print(f"The favorite color of Sara is {sara_data['color']}.")
+sara_data['color'] = 'yellow'
+print(f"The favorite color of Sara after modifying is {sara_data['color']}.")
+
+# removing function
+sara_data = {'name': 'Sara', 'class': 8, 'school': 'The Educators', 'fav_color': 'blue', 'points': 5, 'gender': 'girl', 'fav_food': 'pasta'}
+del sara_data['points']
+print(sara_data)
+
+# clearing function
+sara_data.clear()
+print(sara_data)
+
+# copy function
+sara_data = {'name': 'Sara', 'class': 8, 'school': 'The Educators', 'fav_color': 'blue', 'points': 5, 'gender': 'girl', 'fav_food': 'pasta'}
+sara_biodata= sara_data.copy()
+print(sara_biodata)
+
+# get function
+print(sara_data.get('name'))
+
+# items function
+print(list(sara_data.items()))
+
+# keys function
+print(list(sara_data.keys()))
+
+# pop function
+print(sara_data.pop('school'))
+print(sara_data)
+
+# popitem function
+print(sara_data.popitem())
+print(sara_data)
+
+# for loop function
+for key in sara_data:
+    print(f'key: {key}')
+
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'x': 10, 'y': 20, 'z': 30}
+
+for (key1, value1), (key2, value2) in zip(dict1.items(), dict2.items()):
+    print(f"From dict1: Key = {key1}, Value = {value1}")
+    print(f"From dict2: Key = {key2}, Value = {value2}")
+    print("---")
